@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8">
+<title>随心听课</title>
+<style>
+  *{box-sizing:border-box}body{width:300px;margin:0;padding:22px;color:#173d32;background:#f4faf7;font:14px/1.6 system-ui,"Microsoft YaHei",sans-serif}
+  header{display:flex;gap:12px;align-items:center}img{width:44px;height:44px}h1{font-size:21px;margin:0}header p{font-size:12px;color:#60776d;margin:0}
+  label{display:flex;align-items:center;justify-content:space-between;margin-top:22px;padding:14px;background:white;border:1px solid #d8e9df;border-radius:12px;font-weight:600;cursor:pointer}input{width:20px;height:20px;accent-color:#176b49}
+  #status{color:#176b49}p{margin:14px 0 0}.hint{color:#63746c;font-size:12px}.version{font-size:11px;color:#84958c;margin-top:20px}
+</style>
+<header><img src="icons/48.png" alt=""><div><h1>随心听课</h1><p>鼠标自由移动，课程持续播放</p></div></header>
+<label for="enabled">移开鼠标继续播放<input type="checkbox" id="enabled" disabled></label>
+<p id="status" role="status">正在读取设置…</p>
+<p class="hint">适用于学习通网页版。打开课程后手动播放即可，手动暂停照常有效。页面右上角也可以切换开关。</p>
+<p class="hint">不保证最小化、休眠或切换标签后仍能播放。</p>
+<p class="version">0.2.0 · 设置仅保存在本机</p>
+<script src="popup.js"></script>
+</html>

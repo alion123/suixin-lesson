@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "随心听课",
+  "version": "0.2.0",
+  "description": "学习通网页版播放助手：鼠标自由移动，课程持续播放，手动暂停照常有效。",
+  "icons": {"16": "icons/16.png", "32": "icons/32.png", "48": "icons/48.png", "128": "icons/128.png"},
+  "action": {"default_title": "随心听课", "default_popup": "popup.html"},
+  "permissions": ["storage"],
+  "content_scripts": [{
+    "matches": ["https://*.chaoxing.com/*"],
+    "js": ["content.js"],
+    "run_at": "document_start",
+    "all_frames": true
+  }]
+}

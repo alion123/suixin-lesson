@@ -1,0 +1,9 @@
+/downloads/suixin-setup.exe
+  Content-Type: application/octet-stream
+  Content-Disposition: attachment; filename="suixin-setup.exe"
+/downloads/suixin-lesson.zip
+  Content-Type: application/zip
+  Content-Disposition: attachment; filename="suixin-lesson.zip"
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
